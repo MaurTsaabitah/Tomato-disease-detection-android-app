@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Tomato Disease Identification App"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="25dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/appname"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/selectBtn"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/custom_button1"
+            android:fontFamily="@font/poppins"
+            android:layout_margin="10dp"
+            android:text="Pilih Gambar"
+            android:textAllCaps="false"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/identifyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:width="125dp"
+            android:background="@drawable/custom_button2"
+            android:fontFamily="@font/poppins"
+            android:text="Identifikasi"
+            android:textAllCaps="false"
+            android:typeface="normal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/restext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linLayout"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="21dp"
+        android:text="Hasil Identifikasi : "
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linLayout"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="57dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
